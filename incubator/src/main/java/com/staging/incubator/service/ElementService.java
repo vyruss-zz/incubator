@@ -30,4 +30,10 @@ public class ElementService {
 		return eRep.findByElementId(id);
 	}
 
+	public List<Element> storeHierarchy(List<Element> list) {
+		for(Element ele: list) {
+			eRep.save(ele);
+		}
+		return eRep.findAll();
+	}
 }

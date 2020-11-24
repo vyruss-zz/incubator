@@ -14,6 +14,7 @@ spring:
     show-sql: false
     properties:
       hibernate:
+        ddl-auto: update
         jdbc:
           lob:
             non_contextual_creation: true
